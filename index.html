@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>js tuturil</title>
+    <style>
+        .form {
+            background-color: #eee;
+            padding:  30px;
+            width: 500px;
+            border-radius: 9px;
+            margin: 60px auto 20px;
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .form .input {
+            border: none;
+            width: 400px;
+            height: 40px;
+            border-radius: 9px;
+            outline: none;
+        }
+        .form .add {
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 9px;
+            padding: 10px;
+            outline: none;
+        }
+        .form .add:hover {
+            background-color: rgb(233, 0, 0);
+        }
+        .tasks {
+            background-color: #eee;
+            width: 500px;
+            padding:  30px;
+            min-height: 10px;
+            margin: auto;
+            border-radius: 9px;
+        }
+        .tasks .task {
+            padding: 10px;
+            background-color: white;
+            border-radius: 9px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .task.done {
+            background-color: #c6c6c6;
+        }
+        .tasks .task .del {
+            background-color: red;
+            color: white;
+            padding: 4px;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+        .delet-all {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            outline: none;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="text" class="input">
+        <input type="submit" class="add" value="add task">
+    </div>
+    <div class="tasks">
+        <!-- <div class="task">task 
+            <span class="del">delete</span>
+        </div> -->
+    </div>
+    <button class="delet-all">delet-all</button>
+    <script src="main.js"></script>
+</body>
+</html>
