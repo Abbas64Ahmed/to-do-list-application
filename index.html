@@ -6,11 +6,33 @@
     <link rel="stylesheet" href="css/master.css">
     <title>js tuturil</title>
     <style>
+        .contaner{
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
         .form {
             background-color: #eee;
             padding:  30px;
-            width: 500px;
             border-radius: 9px;
+            width: 70%;
+            max-width: 500px;
             margin: 60px auto 20px;
             display: flex;
             justify-content: space-around;
@@ -18,7 +40,8 @@
         }
         .form .input {
             border: none;
-            width: 400px;
+            max-width: 70%;
+            width: 500px;
             height: 40px;
             border-radius: 9px;
             outline: none;
@@ -26,6 +49,7 @@
         .form .add {
             background-color: red;
             color: white;
+            max-width: 100%;
             border: none;
             border-radius: 9px;
             padding: 10px;
@@ -36,8 +60,10 @@
         }
         .tasks {
             background-color: #eee;
-            width: 500px;
+            width: 60%;
+            max-width: 300px;
             padding:  30px;
+            padding-bottom: 15px;
             min-height: 10px;
             margin: auto;
             border-radius: 9px;
@@ -67,24 +93,28 @@
             padding: 10px;
             border-radius: 4px;
             outline: none;
+            border: none;
             margin: 20px auto;
             display: block;
-            width: fit-content;
-            border: none;
+        }
+        .delet-all:hover {
+            background-color: rgb(233, 0, 0);
         }
     </style>
 </head>
 <body>
-    <div class="form">
-        <input type="text" class="input">
-        <input type="submit" class="add" value="add task">
+    <div class="contaner">
+        <div class="form">
+            <input type="text" class="input">
+            <input type="submit" class="add" value="add task">
+        </div>
+        <div class="tasks">
+            <!-- <div class="task">task 
+                <span class="del">delete</span>
+            </div> -->
+        </div>
     </div>
-    <div class="tasks">
-        <!-- <div class="task">task 
-            <span class="del">delete</span>
-        </div> -->
-    </div>
-    <button class="delet-all">delet-all</button>
+        <button class="delet-all">delet-all</button>
     <script src="main.js"></script>
 </body>
 </html>
