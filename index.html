@@ -14,7 +14,7 @@
         }
         @media (min-width: 768px) {
             .container {
-                width: 750px;
+                width: 780px;
             }
         }
         @media (min-width: 992px) {
@@ -31,7 +31,7 @@
             background-color: #eee;
             padding:  30px;
             border-radius: 9px;
-            width: 70%;
+            width: 85%;
             max-width: 500px;
             margin: 60px auto 20px;
             display: flex;
@@ -40,7 +40,7 @@
         }
         .form .input {
             border: none;
-            max-width: 70%;
+            max-width: 80%;
             width: 500px;
             height: 40px;
             border-radius: 9px;
@@ -100,12 +100,31 @@
         .delet-all:hover {
             background-color: rgb(233, 0, 0);
         }
+        @media (max-width: 768px) {
+            .form {
+                padding: 20px;
+            }
+            .form .input {
+                height: 30px;
+            }
+            .form .add {
+                padding: 5px;
+            }
+            .tasks {
+                padding: 15px;
+                padding-bottom: 1px;
+            }
+            .tasks .task {
+                padding: 6px;
+                font-size: 13px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="contaner">
         <div class="form">
-            <input type="text" class="input">
+            <input type="text" class="input" value="Hi Asia. write your tasks here">
             <input type="submit" class="add" value="add task">
         </div>
         <div class="tasks">
