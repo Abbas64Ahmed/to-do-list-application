@@ -86,11 +86,11 @@ function getDataFromLocalStorge() {
     }
 }
 
+
 function deletTaskWith(taskId) {
     emptyArr = emptyArr.filter((task) => task.id != taskId)
     addDataToLocalStorge(emptyArr)
 }
-
 
 function toggleStatusTaskWith(taskId) {
     for (i = 0; i < emptyArr.length; i++) {
